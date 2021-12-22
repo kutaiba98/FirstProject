@@ -1,0 +1,287 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: blue;
+    width:100% ;
+}
+
+header {
+    height:100vh ;
+    background-color: brown;
+}
+
+main {
+    background-color: rgb(253, 231, 231);
+    height: auto;
+}
+
+footer {
+    background-color: rgb(199, 178, 178);
+    height: auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-sec {
+    
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.header-sec span {
+    display: block;
+}
+
+.header-sec .span1 {
+    color: white;
+}
+
+.main-sec1,.main-sec3,article,.main-sec2 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: auto;
+    text-align: center;
+}
+
+.main-sec1 {
+    margin-right:10%;
+    margin-left:10%;
+    background-image:url(./images/rome.png);
+    background-size: cover;
+}
+
+.main-sec3 .row div {
+display: flex;
+justify-content: space-evenly;
+}
+
+article {
+    height: 60vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+    justify-content:right;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-size: medium;
+    font-weight:600;
+}
+
+nav a {
+    text-decoration:none;
+    width: 125px;
+    text-align: center;
+    background-color: rgb(253,15,15);
+    color:white;
+    height: 60px;
+}
+
+nav a:hover {
+    background-color: red;
+    color: white;
+    height: 90%;
+}
+
+.main-sec3 .row video {
+    width:80% ;
+    height: 100%;
+}
+ 
+    h1 {
+        color: black;
+        font-size: xx-large;
+        letter-spacing: -4px;
+    }
+    
+    .span1 {
+        
+        color: rgb(196, 136, 136);
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        animation: moving 4s linear infinite;
+    }
+
+    .span2 {
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+
+    @keyframes moving {
+        0% {
+            color: black;
+            margin-bottom: -20px;
+            letter-spacing: 25px;
+        }
+        30% {
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+        85% {
+            letter-spacing: 25px;
+            margin-bottom: -20px;
+        }
+        100% {
+            letter-spacing: 25px;      
+        }
+    }
+
+    .button1 {
+        color: white;
+        background-color: transparent;
+        height: 30px;
+        border-radius: 20px;
+    }
+.button1:focus {
+border-color: dodgerblue;
+
+}
+    .button1:hover {
+        background-color:red;
+        color: white;
+    }
+
+    h1 span {
+        color: rgb(253, 15, 15);
+        border-right: solid 4px rgb(253,15,15);
+        margin-left: 5px;
+    }
+
+    form {
+        text-align: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    textarea {
+        width:70%;
+        height: 200px;
+        resize: none;
+        margin-left:15%;
+        margin-right: 15%;
+        margin-top: 40px;
+        border: 2px solid rgb(253,15,15);
+        border-radius: 4px;
+        outline: none;
+    }
+
+    input {
+        width: calc(67%/3);
+        height: 40px;
+        margin-left: 0.5%;
+        margin-right:0.5%;
+        border: 2px solid rgb(253,15,15);
+        border-radius: 4px;
+        outline: none; 
+    }
+
+    form .button1 {
+        margin-top: 20px;
+    }
+
+    input:focus,textarea:focus {
+        border-color: dodgerblue;
+    }
+
+    .main-sec1 .button1 {
+        color: black;
+        width: 20%;
+    }
+
+    .main-div {
+        height: 100%;
+        width: 40%;
+    }
+  
+    .main-sec2 div {
+        width:100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   .row.main-img1 {
+       width: 50%;
+       height:200px;     
+    }
+
+    .row.main-img1>div {
+        background-size: cover;
+    }
+
+.img1 {
+    background-image: url(./images/img1.jpg);
+}
+.img1:hover {
+    background-image: url(./images/img24.jpg);
+}
+.img2 {
+    background-image: url(./images/img3.jpg);
+}
+.img2:hover {
+    background-image: url(./images/Emperor-Tiberius-remove-bg-crop.png);
+}
+.img3 {
+    background-image: url(./images/img6.jpg);
+}
+.img3:hover {
+    background-image: url(./images/נציב2.jfif);
+}
+.img4 {
+    background-image: url(./images/img7.jpg);
+}
+.img4:hover {
+    background-image: url(./images/נציב3.jfif);
+}
+.img5 {
+    background-image: url(./images/img13.jpg);
+}
+.img5:hover {
+    background-image: url(./images/נציב4.jpg);
+}
+.img6 {
+    background-image: url(./images/img12.jpg);
+}
+.img6:hover {
+    background-image: url(./images/נציב5.jfif);
+}
+.img7 {
+    background-image: url(./images/img18.jpg);
+}
+.img7:hover {
+    background-image: url(./images/נציב6.jfif);
+}
+.img8 {
+    background-image: url(./images/img23.jpg);
+}
+.img8:hover {
+    background-image: url(./images/נציב7.jpg);
+}
+.img9 {
+    background-image: url(./images/img17.jpg);
+}
+.img9:hover {
+    background-image: url(./images/נציב8.png);
+}
+
